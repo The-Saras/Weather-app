@@ -1,17 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <style>
+        body {
+            background-color: #faf1e6;
+        }
+
+        .btn {
+            background: #b6c867;
+            font-family: 'Chela One', cursive;
+            border-style: none;
+            height: 30px;
+            width: 75px;
+            font-size: 20px;
+            margin-bottom: 8px;
+            box-shadow:2px 2px #99a856;
+        }
+
+        .input {
+            font-family: 'Chela One', cursive;
+            color: #01937c;
+            font-size: 35px;
+            text-shadow: 1px 1px #017462;
+        }
+
+        .form {
+            text-align: center;
+        }
+
+        input {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 10px;
+        }
+        .box{
+            margin-top: 50px;
+            background-color: #ffc074;
+            display: block;
+            width: 50%;
+            margin-right: auto;
+            margin-left:auto;
+            box-shadow: 8px 8px #feb862;
+            border-radius: 10px;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <form action="/" method="post">
-        <label for="city">Enter name of city</label>
-        <input type="text" name="cityname">
-        <br>
-        <button type="submit">Submit</button>
-    </form>
+    <div class="box">
+
+        <form class="form" action="/" method="post">
+            <label class="input" for="city">Enter name of city</label>
+            <input type="text" name="cityname">
+            <br>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
 </body>
+
 </html>

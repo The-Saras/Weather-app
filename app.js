@@ -20,6 +20,7 @@ app.post("/",function(req,res){
         day:"numeric",
         month:"long"
     };
+   
     var day=date.toLocaleDateString("en-UK",format);
     https.get(url,function(response)
     {
@@ -38,5 +39,7 @@ app.post("/",function(req,res){
 
 app.listen(3000,function(){
     console.log("server up on 3000 port")
+    console.log("Do not go on any other port you fucking idiot");
+    
 })
 //weather[0].icon

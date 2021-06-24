@@ -5,29 +5,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <style>
-        body{
-            background-color: #ff5e78;
+        body {
+            background-image: -webkit-linear-gradient(55deg, #FFC074 50%, #fdf6e4 50%);
+            min-height: 1000px;
         }
+
         .city {
 
             font-family: 'Bebas Neue', cursive;
             letter-spacing: 3px;
             font-size: 50px;
             text-align: center;
-            color: #ffe8e8;
+            color: #01937C;
         }
 
         .date {
             font-family: 'Chela One', cursive;
             text-align: center;
+            color: #FFC074;
         }
 
         .temp {
             font-family: 'Bebas Neue', cursive;
             letter-spacing: 2px;
-            font-size: 30px;
+            font-size: 45px;
             text-align: center;
-
+            color: rgb(59, 59, 59);
+            text-shadow: 2px 1.5px black;
         }
 
         .des {
@@ -42,7 +46,6 @@
             margin-right: auto;
             width: 10%;
         }
-        
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,12 +54,22 @@
 </head>
 
 <body>
-        <h2 class="temp"><%=tempC%> degree celcius</h2>
-        <img src="<%=img%>" class="img">
-        <h1 class="city"><%=name%> </h1>
-        <h2 class="date"><%=dateday%></h2>
-        <h3 class="des">Weather looks like <%=weatherdes%></h3>
-
+    <h2 class="temp">
+        <%=tempC%> degree celsius
+    </h2>
+    <img src="<%=img%>" class="img">
+    <h1 class="city">
+        <%=name%>
+    </h1>
+    <h2 class="date">
+        <%=dateday%>
+    </h2>
+    <h3 class="des">Weather looks like <%=weatherdes%>
+    </h3>
+    
 </body>
+<script>
+   
+</script>
 
 </html>
